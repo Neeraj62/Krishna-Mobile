@@ -336,19 +336,49 @@
       </div>
 
       <div class="gallery-grid">
-        <!-- Item 1 -->
-        <div class="gallery-item" data-src="images/shop img.jpeg">
-          <img class="gallery-img" src="images/shop img.jpeg" alt="Krishna Mobile Repair Shop Front" loading="lazy">
+        <!-- Item 1 - Repairing Shop -->
+        <div class="gallery-item" data-src="images/repairing shop.jpeg">
+          <img class="gallery-img" src="images/repairing shop.jpeg" alt="Repairing Shop Inside" loading="lazy">
           <div class="gallery-overlay">
             <div class="gallery-overlay-icon">🔍</div>
-            <h4>Our Shop</h4>
-            <p>Krishna Mobile Repair Shop Front</p>
+            <h4>Repair Workshop</h4>
+            <p>Our professional repair setup</p>
           </div>
         </div>
 
-        <!-- Item 2 -->
+        <!-- Item 2 - Repair Workshop Video -->
+        <div class="gallery-item" data-src="images/Repair Workshop.mp4">
+          <video class="gallery-img" src="images/Repair Workshop.mp4" muted loop autoplay playsinline loading="lazy"></video>
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">▶️</div>
+            <h4>Repair Workshop Video</h4>
+            <p>Watch our repair process</p>
+          </div>
+        </div>
+
+        <!-- Item 3 - Hero Smartphones -->
+        <div class="gallery-item" data-src="images/hero_smartphones.png">
+          <img class="gallery-img" src="images/hero_smartphones.png" alt="Hero Smartphones Collection" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">🔍</div>
+            <h4>Smartphone Collection</h4>
+            <p>Premium second-hand smartphones</p>
+          </div>
+        </div>
+
+        <!-- Item 4 - Refurbished Phones -->
+        <div class="gallery-item" data-src="images/refurbished_phones.png">
+          <img class="gallery-img" src="images/refurbished_phones.png" alt="Refurbished Phones" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">🔍</div>
+            <h4>Refurbished Phones</h4>
+            <p>Certified refurbished devices</p>
+          </div>
+        </div>
+
+        <!-- Item 5 - WhatsApp Image -->
         <div class="gallery-item" data-src="images/WhatsApp Image 2026-06-02 at 10.15.49 AM.jpeg">
-          <img class="gallery-img" src="images/WhatsApp Image 2026-06-02 at 10.15.49 AM.jpeg" alt="Second Hand Mobile Collection 1" loading="lazy">
+          <img class="gallery-img" src="images/WhatsApp Image 2026-06-02 at 10.15.49 AM.jpeg" alt="Second Hand Mobile Collection" loading="lazy">
           <div class="gallery-overlay">
             <div class="gallery-overlay-icon">🔍</div>
             <h4>Second Hand Mobiles</h4>
@@ -356,23 +386,43 @@
           </div>
         </div>
 
-        <!-- Item 3 -->
-        <div class="gallery-item" data-src="images/mobile shope details 1.jpeg">
-          <img class="gallery-img" src="images/mobile shope details 1.jpeg" alt="Second Hand Mobile Collection 2" loading="lazy">
+        <!-- Item 6 - Screen Repair -->
+        <div class="gallery-item" data-src="images/screen_repair.png">
+          <img class="gallery-img" src="images/screen_repair.png" alt="Screen Repair" loading="lazy">
           <div class="gallery-overlay">
             <div class="gallery-overlay-icon">🔍</div>
-            <h4>Premium Collection</h4>
-            <p>iPhone and premium Android devices</p>
+            <h4>Screen Repair</h4>
+            <p>Professional screen replacement</p>
           </div>
         </div>
 
-        <!-- Item 4 -->
-        <div class="gallery-item" data-src="images/repairing shop.jpeg">
-          <img class="gallery-img" src="images/repairing shop.jpeg" alt="Repairing Shop Inside" loading="lazy">
+        <!-- Item 7 - Repair Tools -->
+        <div class="gallery-item" data-src="images/repair_tools.png">
+          <img class="gallery-img" src="images/repair_tools.png" alt="Repair Tools" loading="lazy">
           <div class="gallery-overlay">
             <div class="gallery-overlay-icon">🔍</div>
-            <h4>Repair Workshop</h4>
-            <p>Our professional repair setup</p>
+            <h4>Repair Tools</h4>
+            <p>Professional repair equipment</p>
+          </div>
+        </div>
+
+        <!-- Item 8 - Micro Soldering (Extra 1) -->
+        <div class="gallery-item" data-src="images/micro_soldering.png">
+          <img class="gallery-img" src="images/micro_soldering.png" alt="Micro Soldering" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">🔍</div>
+            <h4>Micro Soldering</h4>
+            <p>Chip-level motherboard repairs</p>
+          </div>
+        </div>
+
+        <!-- Item 9 - Software Diagnostic (Extra 2) -->
+        <div class="gallery-item" data-src="images/software_diagnostic.png">
+          <img class="gallery-img" src="images/software_diagnostic.png" alt="Software Diagnostic" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">🔍</div>
+            <h4>Software Diagnostic</h4>
+            <p>Software repairs and diagnostics</p>
           </div>
         </div>
       </div>
@@ -382,10 +432,11 @@
   <!-- LIGHTBOX MODAL -->
   <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
     <button id="lightboxClose" class="lightbox-close" aria-label="Close Lightbox">&times;</button>
-    <button id="lightboxPrev" class="lightbox-nav lightbox-prev" aria-label="Previous Image">&#10094;</button>
-    <button id="lightboxNext" class="lightbox-nav lightbox-next" aria-label="Next Image">&#10095;</button>
+    <button id="lightboxPrev" class="lightbox-nav lightbox-prev" aria-label="Previous Item">&#10094;</button>
+    <button id="lightboxNext" class="lightbox-nav lightbox-next" aria-label="Next Item">&#10095;</button>
     <div class="lightbox-content">
-      <img id="lightboxImg" class="lightbox-img" src="" alt="Zoomed view">
+      <img id="lightboxImg" class="lightbox-img" src="" alt="Zoomed view" style="display: none;">
+      <video id="lightboxVideo" class="lightbox-img" controls style="display: none;"></video>
       <div class="lightbox-caption">
         <h4 id="lightboxTitle"></h4>
         <p id="lightboxDesc"></p>

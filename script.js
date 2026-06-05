@@ -154,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const galleryItems = document.querySelectorAll('.gallery-item');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxVideo = document.getElementById('lightboxVideo');
   const lightboxTitle = document.getElementById('lightboxTitle');
   const lightboxDesc = document.getElementById('lightboxDesc');
   const lightboxClose = document.getElementById('lightboxClose');
@@ -164,14 +165,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const galleryData = Array.from(galleryItems).map(item => ({
     src: item.getAttribute('data-src'),
     title: item.querySelector('h4').textContent,
-    desc: item.querySelector('p').textContent
+    desc: item.querySelector('p').textContent,
+    isVideo: item.querySelector('video') !== null
   }));
 
   function openLightbox(index) {
     currentGalleryIndex = index;
     const item = galleryData[currentGalleryIndex];
-    if (item && lightbox && lightboxImg) {
-      lightboxImg.src = item.src;
+    if (item && lightbox) {
+      // Reset both elements
+      lightboxImg.style.display = 'none';
+      lightboxVideo.style.display = 'none';
+      lightboxVideo.pause();
+      lightboxVideo.src = '';
+
+      if (item.isVideo) {
+        lightboxVideo.src = item.src;
+        lightboxVideo.style.display = 'block';
+      } else {
+        lightboxImg.src = item.src;
+        lightboxImg.style.display = 'block';
+      }
+
       if (lightboxTitle) lightboxTitle.textContent = item.title;
       if (lightboxDesc) lightboxDesc.textContent = item.desc;
       lightbox.classList.add('active');
@@ -183,15 +198,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lightbox) {
       lightbox.classList.remove('active');
       document.body.style.overflow = ''; // Restore background scrolling
+      lightboxVideo.pause();
+      lightboxVideo.src = '';
     }
   }
 
-  function showNextImage() {
+  function showNextItem() {
     currentGalleryIndex = (currentGalleryIndex + 1) % galleryData.length;
     openLightbox(currentGalleryIndex);
   }
 
-  function showPrevImage() {
+  function showPrevItem() {
     currentGalleryIndex = (currentGalleryIndex - 1 + galleryData.length) % galleryData.length;
     openLightbox(currentGalleryIndex);
   }
@@ -203,8 +220,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
-  if (lightboxNext) lightboxNext.addEventListener('click', showNextImage);
-  if (lightboxPrev) lightboxPrev.addEventListener('click', showPrevImage);
+  if (lightboxNext) lightboxNext.addEventListener('click', showNextItem);
+  if (lightboxPrev) lightboxPrev.addEventListener('click', showPrevItem);
 
   // Close lightbox on clicking backdrop
   if (lightbox) {
@@ -219,8 +236,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e) => {
     if (lightbox && lightbox.classList.contains('active')) {
       if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowRight') showNextImage();
-      if (e.key === 'ArrowLeft') showPrevImage();
+      if (e.key === 'ArrowRight') showNextItem();
+      if (e.key === 'ArrowLeft') showPrevItem();
     }
   });
 
