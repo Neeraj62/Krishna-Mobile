@@ -3,457 +3,563 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krishna Mobile & Repair | Pimpri's Most Trusted Mobile Repair Shop</title>
-  <meta name="description" content="Get your phone repaired fast at the best price! Krishna Mobile & Repair at Sai Chowk, Pimpri, Pune specializes in display/glass change, water damage, hardware & software repair. Quality second-hand mobiles available.">
+  <title>Krishna Mobile Repair | Trusted Mobile Repairs & Second Hand Phones in Pimpri, Pune</title>
+  <meta name="description" content="Krishna Mobile Repair in Pimpri, Pune. Expert display glass change, hardware & software repairs. Premium second hand mobile phones available at best prices.">
+  
+  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ==========================================================================
-       HEADER / NAVBAR
-       ========================================================================== -->
-  <header class="header">
-    <div class="container navbar-container">
-      <a href="index.html" class="logo" id="nav-logo">
-        <div class="logo-circle">KM</div>
-        <div class="logo-text">
-          <span>Krishna Mobile</span>
-          <span>& Repair</span>
-        </div>
+  <!-- Glow Background Accents -->
+  <div class="bg-glow glow-top-right"></div>
+  <div class="bg-glow glow-bottom-left"></div>
+
+  <!-- STICKY HEADER -->
+  <header id="header">
+    <div class="container">
+      <a href="#home" class="logo-container">
+        <img src="images/logo%20website.png" alt="Krishna Mobile Logo" class="logo-img">
+        <div class="logo-text">Krishna <span>Mobile</span></div>
       </a>
 
-      <!-- Navigation Links -->
-      <nav class="nav-menu" id="nav-menu">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Contact Us</a>
-      </nav>
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <!-- Hamburger Menu (Mobile Toggle) -->
-      <div class="hamburger" id="hamburger-toggle" aria-label="Toggle Navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <!-- Navigation Menu -->
+      <nav id="navMenu">
+        <ul>
+          <li class="active"><a href="#home">🏠 Home</a></li>
+          <li><a href="#about">👋 About Us</a></li>
+          <li><a href="#services">🔧 Services</a></li>
+          <li><a href="#gallery">📸 Gallery</a></li>
+          <li><a href="#contact">📞 Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- ==========================================================================
-       HERO SECTION
-       ========================================================================== -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content reveal-left">
-        <span class="badge">Pimpri's Most Trusted Mobile Repair Shop</span>
-        <h1 class="hero-title">Fix Your Phone Fast — <span>At The Best Price!</span></h1>
-        <p class="hero-subtext">
-          Second-hand mobiles · Display repair · Hardware & Software — all under one roof! Trusted service with original parts and fast turnaround.
-        </p>
-        <div class="hero-buttons">
-          <a href="services.html" class="btn btn-primary">
-            See Our Services 
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-          <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+  <!-- 1. HOME SECTION -->
+  <section id="home">
+    <!-- Animated Particle Canvas Background -->
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
+    
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span></span> Pimpri's #1 Rated Mobile Shop
+          </div>
+          <h1 class="hero-title">
+            Krishna <span>Mobile Repair</span>
+          </h1>
+          <p class="hero-tagline">
+            All Types of <strong>Second Hand Mobile Available</strong>. Professional repair services with genuine parts, instant turnaround, and unmatched pricing.
+          </p>
+          <div class="hero-btns">
+            <a href="tel:9527226918" class="btn btn-primary">
+              <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              Call Now
+            </a>
+            <a href="https://www.google.com/maps?q=18.6204266,73.8041847&z=17&hl=en" target="_blank" rel="noopener" class="btn btn-secondary">
+              <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Get Directions
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div class="hero-illustration reveal-right">
-        <div class="phone-svg-container">
-          <!-- Premium Floating phone SVG illustration -->
-          <svg viewBox="0 0 400 500" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Shadow underneath -->
-            <ellipse cx="200" cy="460" rx="120" ry="15" fill="rgba(0, 0, 0, 0.4)" />
+        
+        <div class="hero-visual">
+          <div class="hero-img-wrapper">
+            <img class="hero-img" src="images/hero_smartphones.png" alt="Second Hand Smartmobiles Stack">
             
-            <!-- Phone Case & Body -->
-            <rect x="70" y="30" width="260" height="400" rx="35" fill="#1b1b22" stroke="#ff3333" stroke-width="4" />
-            <rect x="75" y="35" width="250" height="390" rx="30" fill="#0c0c0e" />
+            <!-- Float Badges -->
+            <div class="hero-glow-card hero-glow-card-1">
+              <div class="glow-card-icon">⚡</div>
+              <div class="glow-card-text">
+                <h4>1-Hr Repair</h4>
+                <p>Fast turnaround time</p>
+              </div>
+            </div>
             
-            <!-- Screen Area -->
-            <rect x="85" y="45" width="230" height="370" rx="22" fill="#0d0d12" />
-            
-            <!-- Camera Punch-Hole -->
-            <circle cx="200" cy="65" r="7" fill="#1b1b22" />
-            <circle cx="200" cy="65" r="3" fill="#0066ff" />
-            
-            <!-- Circuit Board Trace Overlay (High-tech diagnostic effect) -->
-            <path d="M120 180h60v40" stroke="rgba(255, 51, 51, 0.2)" stroke-width="2" class="diag-line" />
-            <path d="M280 180h-60v40" stroke="rgba(255, 51, 51, 0.2)" stroke-width="2" class="diag-line" />
-            <path d="M200 220v40" stroke="rgba(255, 51, 51, 0.3)" stroke-width="2" />
-            
-            <!-- Scanning Grid / Diagnostic Wave -->
-            <line x1="85" y1="200" x2="315" y2="200" stroke="#ff3333" stroke-width="2" opacity="0.6" />
-            
-            <!-- Diagnostic Nodes -->
-            <circle cx="180" cy="220" r="8" fill="#17171d" stroke="#ff3333" stroke-width="2" class="diag-circle" />
-            <circle cx="220" cy="220" r="8" fill="#17171d" stroke="#25d366" stroke-width="2" />
-            <circle cx="200" cy="260" r="8" fill="#17171d" stroke="#ffcc00" stroke-width="2" />
-            
-            <!-- Sleek Graph Vector -->
-            <path d="M100 370 l30-20 l25 15 l40-35 l30 25 l40-50" stroke="#ff3333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M100 370 l30-20 l25 15 l40-35 l30 25 l40-50 V370 H100 Z" fill="rgba(255, 51, 51, 0.05)" />
-            
-            <!-- Repair Checkmarks on Screen -->
-            <g transform="translate(110, 100)">
-              <circle cx="15" cy="15" r="10" fill="rgba(37, 211, 102, 0.15)" stroke="#25d366" stroke-width="1.5" />
-              <path d="M11 15 l3 3 l6-6" stroke="#25d366" stroke-width="2" stroke-linecap="round" />
-              <text x="35" y="20" fill="#ffffff" font-family="Poppins" font-size="12" font-weight="bold">Display OK</text>
-            </g>
-            
-            <g transform="translate(110, 140)">
-              <circle cx="15" cy="15" r="10" fill="rgba(37, 211, 102, 0.15)" stroke="#25d366" stroke-width="1.5" />
-              <path d="M11 15 l3 3 l6-6" stroke="#25d366" stroke-width="2" stroke-linecap="round" />
-              <text x="35" y="20" fill="#ffffff" font-family="Poppins" font-size="12" font-weight="bold">Hardware Passed</text>
-            </g>
-          </svg>
-          
-          <!-- Animated Floating Badge -->
-          <div class="hero-badge-floating">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><polyline points="12 22 12 12"></polyline><polyline points="2 8.5 12 12 22 8.5"></polyline><polyline points="12 12 12 2"></polyline></svg>
-            <span>Best Deals in Pimpri!</span>
+            <div class="hero-glow-card hero-glow-card-2">
+              <div class="glow-card-icon">💎</div>
+              <div class="glow-card-text">
+                <h4>Best Deals</h4>
+                <p>On certified pre-owned</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================================================
-       INFINITE SCROLLING TICKER
-       ========================================================================== -->
-  <div class="ticker-wrapper">
-    <div class="ticker-content">
-      <!-- Row 1 -->
-      <div class="ticker-item"><span>📱</span> Second-Hand Mobiles</div>
-      <div class="ticker-item"><span>🔧</span> Display Repair</div>
-      <div class="ticker-item"><span>⚙️</span> Hardware Repair</div>
-      <div class="ticker-item"><span>💾</span> Software Repair</div>
-      <div class="ticker-item"><span>📱</span> All Brands Serviced</div>
-      <div class="ticker-item"><span>📞</span> Call: <span class="highlight">9527226918</span></div>
-      <!-- Duplicate row for seamless loop -->
-      <div class="ticker-item"><span>📱</span> Second-Hand Mobiles</div>
-      <div class="ticker-item"><span>🔧</span> Display Repair</div>
-      <div class="ticker-item"><span>⚙️</span> Hardware Repair</div>
-      <div class="ticker-item"><span>💾</span> Software Repair</div>
-      <div class="ticker-item"><span>📱</span> All Brands Serviced</div>
-      <div class="ticker-item"><span>📞</span> Call: <span class="highlight">9527226918</span></div>
-    </div>
-  </div>
-
-  <!-- ==========================================================================
-       STATS SECTION
-       ========================================================================== -->
-  <section class="stats">
-    <div class="container stats-grid">
-      <div class="stat-card">
-        <div class="stat-number" data-target="1000" data-suffix="+">0</div>
-        <div class="stat-label">Happy Customers</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" data-target="8" data-suffix="+">0</div>
-        <div class="stat-label">Years Experience</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" data-target="10" data-suffix="+">0</div>
-        <div class="stat-label">Brands Serviced</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number" data-target="100" data-suffix="%">0</div>
-        <div class="stat-label">Satisfaction</div>
+  <!-- 2. ABOUT US SECTION -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-badges">
+          <div class="trust-badge">
+            <div class="badge-icon">
+              <svg viewBox="0 0 64 64" style="width: 48px; height: 48px;">
+                <defs>
+                  <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00f2fe" />
+                    <stop offset="100%" stop-color="#4facfe" />
+                  </linearGradient>
+                </defs>
+                <path d="M32 4 L50 12 V28 C50 39.5 42.5 49.5 32 54 C21.5 49.5 14 39.5 14 28 V12 Z" fill="none" stroke="url(#shieldGrad)" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M32 10 L44 16 V28 C44 36.5 38.5 44 32 47.5 C25.5 44 20 36.5 20 28 V16 Z" fill="rgba(0, 242, 254, 0.08)" stroke="url(#shieldGrad)" stroke-width="1.5"/>
+                <path d="M26 28 l4 4 l8 -8" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </div>
+            <h4>Genuine Spares</h4>
+            <p>We use high-grade parts for screen replacements and internal fixes.</p>
+          </div>
+          <div class="trust-badge">
+            <div class="badge-icon">
+              <svg viewBox="0 0 64 64" style="width: 48px; height: 48px;">
+                <defs>
+                  <linearGradient id="expressGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#7c3aed" />
+                    <stop offset="100%" stop-color="#4facfe" />
+                  </linearGradient>
+                </defs>
+                <circle cx="32" cy="32" r="24" stroke="url(#expressGrad)" stroke-width="2" stroke-dasharray="10 6" fill="none"/>
+                <circle cx="32" cy="32" r="18" stroke="url(#expressGrad)" stroke-width="1.5" stroke-dasharray="2 4" fill="none"/>
+                <polyline points="32 20 32 32 40 32" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+                <polygon points="36 10 24 28 34 28 28 48 44 24 32 24" fill="var(--primary)"/>
+              </svg>
+            </div>
+            <h4>Express Service</h4>
+            <p>Get your display glass or battery replaced within the same day.</p>
+          </div>
+          <div class="trust-badge">
+            <div class="badge-icon">
+              <svg viewBox="0 0 64 64" style="width: 48px; height: 48px;">
+                <defs>
+                  <linearGradient id="diagGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00f2fe" />
+                    <stop offset="100%" stop-color="#00ff69" />
+                  </linearGradient>
+                </defs>
+                <circle cx="32" cy="32" r="22" stroke="url(#diagGrad)" stroke-width="2.5" fill="none"/>
+                <path d="M32 4 v6 M32 54 v6 M4 32 h6 M54 32 h6" stroke="url(#diagGrad)" stroke-width="2" stroke-linecap="round"/>
+                <rect x="22" y="22" width="20" height="20" rx="3" fill="rgba(0, 242, 254, 0.08)" stroke="url(#diagGrad)" stroke-width="2"/>
+                <circle cx="32" cy="32" r="4" fill="#ffffff" />
+                <path d="M28 28 h8 v8 h-8 z" fill="none" stroke="#ffffff" stroke-width="1"/>
+              </svg>
+            </div>
+            <h4>Expert Diagnosis</h4>
+            <p>Our experienced technicians resolve complex motherboard issues.</p>
+          </div>
+          <div class="trust-badge">
+            <div class="badge-icon">
+              <svg viewBox="0 0 64 64" style="width: 48px; height: 48px;">
+                <defs>
+                  <linearGradient id="trustGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f59e0b" />
+                    <stop offset="100%" stop-color="#ffc800" />
+                  </linearGradient>
+                </defs>
+                <circle cx="32" cy="32" r="22" stroke="url(#trustGrad)" stroke-width="2.5" fill="none" stroke-dasharray="4 2"/>
+                <path d="M22 28c-3.5 0-6 2.5-6 6s2.5 6 6 6c2.8 0 4.8-1.6 5.5-4L32 32l4.5 4c.7 2.4 2.7 4 5.5 4 3.5 0 6-2.5 6-6s-2.5-6-6-6c-2.8 0-4.8 1.6-5.5 4L32 32l-4.5-4c-.7-2.4-2.7-4-5.5-4z" stroke="url(#trustGrad)" stroke-width="3" fill="none" stroke-linejoin="round"/>
+                <path d="M32 8 l1.5 2.5 2.8.5 -2 2 .5 2.8 -2.8 -1.5 -2.8 1.5.5-2.8 -2-2 2.8-.5z" fill="url(#trustGrad)"/>
+              </svg>
+            </div>
+            <h4>Customer Trust</h4>
+            <p>Years of serving satisfied mobile owners across Pimpri and Pune.</p>
+          </div>
+        </div>
+        
+        <div class="about-info">
+          <span class="section-tag">About Our Shop</span>
+          <h3 class="section-title">Serving Pimpri, Pune Since Years</h3>
+          <p>
+            Welcome to <strong>Krishna Mobile Repair</strong>, your trusted destination for all things mobile in Sai Chowk, Pimpri. Over the years, we have built a solid reputation for offering fast, transparent, and budget-friendly services.
+          </p>
+          <p>
+            Whether you want to **buy certified second-hand mobiles** in mint condition or require a **precision display glass replacement**, we have you covered. We work on all major operating systems and brands with a customer-first focus.
+          </p>
+          <a href="#contact" class="btn btn-secondary">
+            Meet the Team
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================================================
-       SERVICES GRID
-       ========================================================================== -->
-  <section class="section">
+  <!-- 3. SERVICES SECTION -->
+  <section id="services">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="badge">What We Do</span>
-        <h2 class="section-title">Our Featured <span>Services</span></h2>
-        <p class="section-subtitle">Professional mobile solutions tailored to restore your device back to perfect health quickly.</p>
+      <div class="section-header">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Our Professional Services</h2>
+        <p class="section-desc">We combine top-grade diagnostic tools with authentic replacement components to deliver stellar mobile care.</p>
       </div>
 
       <div class="services-grid">
         <!-- Service Card 1 -->
-        <div class="service-card glass-panel reveal">
-          <div class="service-card-top">
-            <div class="service-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-            </div>
-            <h3 class="service-title">Second-Hand Mobiles</h3>
-            <p class="service-text">Certified, fully tested, premium quality second-hand smartphones at half the retail price.</p>
+        <div class="service-card">
+          <div class="service-icon-box" style="width: 80px; height: 80px;">
+            <svg viewBox="0 0 64 64" style="width: 44px; height: 44px;">
+              <!-- Phone body -->
+              <rect x="18" y="4" width="28" height="56" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="28" y1="8" x2="36" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="53" r="2.5" fill="currentColor"/>
+              <!-- Certified Ribbon Badge -->
+              <path d="M38 28c0-5 4-9 9-9s9 4 9 9-4 9-9 9-9-4-9-9z" fill="var(--primary)"/>
+              <path d="M43 28l3 3 5-5" stroke="#070b13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <!-- Stars in screen -->
+              <path d="M26 20l.8 1.6 1.8.2-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.2z" fill="#f59e0b"/>
+              <path d="M32 30l.8 1.6 1.8.2-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.2z" fill="#f59e0b"/>
+            </svg>
           </div>
-          <a href="services.html" class="btn-link">
-            <span>Learn More</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
+          <h3>Second Hand Mobile Sales</h3>
+          <p>Explore a collection of premium, fully tested, and certified second-hand smartphones at unmatched prices.</p>
         </div>
 
         <!-- Service Card 2 -->
-        <div class="service-card glass-panel reveal">
-          <div class="service-card-top">
-            <div class="service-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line></svg>
-            </div>
-            <h3 class="service-title">Display Glass Change</h3>
-            <p class="service-text">Flawless screen replacements and glass repairs for all models using original quality displays.</p>
+        <div class="service-card">
+          <div class="service-icon-box" style="width: 80px; height: 80px;">
+            <svg viewBox="0 0 64 64" style="width: 44px; height: 44px;">
+              <!-- Back phone base (cracked) -->
+              <rect x="14" y="14" width="26" height="46" rx="4" fill="none" stroke="currentColor" stroke-width="2.5" opacity="0.3"/>
+              <path d="M16 45l6-3 4 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.3"/>
+              <!-- Front replacement glass sliding into place -->
+              <g transform="translate(8, -8)">
+                <rect x="14" y="14" width="26" height="46" rx="4" fill="none" stroke="var(--primary)" stroke-width="2.5"/>
+                <path d="M19 18h16v32H19z" fill="rgba(0, 242, 254, 0.08)"/>
+                <line x1="24" y1="17" x2="30" y2="17" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/>
+              </g>
+              <!-- Glass Sparkles -->
+              <path d="M52 14l1 2 2 1-2 1-1 2-1-2-2-1 2-1zm-6 32l.8 1.6 1.6.8-1.6.8-.8 1.6-.8-1.6-1.6-.8 1.6-.8z" fill="#00f2fe"/>
+            </svg>
           </div>
-          <a href="services.html" class="btn-link">
-            <span>Learn More</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
+          <h3>Display Glass Change</h3>
+          <p>Cracked glass? We replace only the upper glass using professional OCA laminating machines to save your original screen cost.</p>
         </div>
 
         <!-- Service Card 3 -->
-        <div class="service-card glass-panel reveal">
-          <div class="service-card-top">
-            <div class="service-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-            </div>
-            <h3 class="service-title">Hardware Repair</h3>
-            <p class="service-text">Motherboard diagnosis, quick battery replacement, and fixing unresponsive charging ports.</p>
+        <div class="service-card">
+          <div class="service-icon-box" style="width: 80px; height: 80px;">
+            <svg viewBox="0 0 64 64" style="width: 44px; height: 44px;">
+              <!-- Motherboard IC Chip -->
+              <rect x="16" y="16" width="32" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="24" y="24" width="16" height="16" rx="2" fill="none" stroke="var(--primary)" stroke-width="2"/>
+              <!-- IC Pins -->
+              <path d="M22 10v6M32 10v6M42 10v6M22 48v6M32 48v6M42 48v6M10 22h6M10 32h6M10 42h6M48 22h6M48 32h6M48 42h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <!-- Solder Pen / Tweezers repairing the chip -->
+              <path d="M52 10L36 26M55 13L39 29" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="36" cy="26" r="3" fill="#00f2fe"/>
+            </svg>
           </div>
-          <a href="services.html" class="btn-link">
-            <span>Learn More</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
+          <h3>Hardware Repairing</h3>
+          <p>From chip-level motherboard logic fixing, charging ports, cameras, to battery replacements, we repair all hardware faults.</p>
         </div>
 
         <!-- Service Card 4 -->
-        <div class="service-card glass-panel reveal">
-          <div class="service-card-top">
-            <div class="service-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
-            </div>
-            <h3 class="service-title">Software Repair</h3>
-            <p class="service-text">Resolving hanging issues, bootloops, system flashing, factory resets, and software unlocks.</p>
+        <div class="service-card">
+          <div class="service-icon-box" style="width: 80px; height: 80px;">
+            <svg viewBox="0 0 64 64" style="width: 44px; height: 44px;">
+              <!-- Phone shell -->
+              <rect x="18" y="4" width="28" height="56" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+              <!-- Gear (Software engine) -->
+              <circle cx="32" cy="26" r="8" fill="none" stroke="var(--primary)" stroke-width="2.5"/>
+              <path d="M32 15v3m0 16v3m-10.5-9.5h3m15 0h3m-15.5-7.5l2 2m11 11l2 2m-15 0l2-2m11-11l2-2" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/>
+              <!-- Diagnostic bar/loader on screen -->
+              <rect x="23" y="41" width="18" height="6" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="25" y1="44" x2="35" y2="44" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
           </div>
-          <a href="services.html" class="btn-link">
-            <span>Learn More</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-
-        <!-- Service Card 5 -->
-        <div class="service-card glass-panel reveal">
-          <div class="service-card-top">
-            <div class="service-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
-            </div>
-            <h3 class="service-title">Water Damage Repair</h3>
-            <p class="service-text">Deep ultrasonic cleaning, corrosion cleanup, and component-level board recovery.</p>
-          </div>
-          <a href="services.html" class="btn-link">
-            <span>Learn More</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-
-        <!-- Service Card 6 -->
-        <div class="service-card glass-panel reveal">
-          <div class="service-card-top">
-            <div class="service-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-            </div>
-            <h3 class="service-title">Accessories</h3>
-            <p class="service-text">Top-quality phone covers, charging cables, adapters, heavy-duty power banks, and earphones.</p>
-          </div>
-          <a href="services.html" class="btn-link">
-            <span>Learn More</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
+          <h3>Software Repairing</h3>
+          <p>OS recovery, bootloop issues, flashing, lock removal, data backup, and software optimizations done securely.</p>
         </div>
       </div>
 
-      <div class="services-cta reveal">
-        <a href="services.html" class="btn btn-primary">
-          View All Services 
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
+      <!-- Supported Brands Panel -->
+      <div class="brands-panel">
+        <h4 class="brands-title">We Expertly Repair & Trade These Brands</h4>
+        <div class="brands-grid">
+          <div class="brand-badge brand-apple">
+            <svg viewBox="0 0 24 24" style="width: 18px; height: 18px;"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.57 2.95-1.39z"/></svg>
+            iPhone
+          </div>
+          <div class="brand-badge brand-mi">
+            <svg viewBox="0 0 24 24" style="width: 22px; height: 22px;"><rect x="2" y="2" width="20" height="20" rx="4" fill="#FF6700"/><path d="M5.5 16.5h1.8v-4.8c0-.9.4-1.4 1.1-1.4.7 0 1.1.5 1.1 1.4v4.8h1.8v-4.8c0-.9.4-1.4 1.1-1.4.7 0 1.1.5 1.1 1.4v4.8h1.8v-6.2c0-1.8-.9-2.8-2.5-2.8-1.1 0-2 .6-2.5 1.4-.4-.8-1.3-1.4-2.4-1.4-1 0-1.9.5-2.4 1.3V8.5H5.5v8zm13 0h1.8v-8h-1.8v8z" fill="#FFF"/></svg>
+            Xiaomi (Mi)
+          </div>
+          <div class="brand-badge brand-samsung">
+            <svg viewBox="0 0 48 24" style="width: 44px; height: 22px;"><ellipse cx="24" cy="12" rx="22" ry="10" fill="#0A47A3"/><text x="24" y="15" font-family="'Outfit', sans-serif" font-weight="900" font-size="7" fill="#FFF" text-anchor="middle" letter-spacing="0.5">SAMSUNG</text></svg>
+            Samsung
+          </div>
+          <div class="brand-badge brand-oppo">
+            <svg viewBox="0 0 70 24" style="width: 50px; height: 20px;" fill="none"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm14-8c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm-5 10V7h2v10h-2zm5-2c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm14-8c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm-5 10V7h2v10h-2zm5-2c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm14-8c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="#03ff69"/></svg>
+            OPPO
+          </div>
+          <div class="brand-badge brand-vivo">
+            <svg viewBox="0 0 60 24" style="width: 44px; height: 20px;" fill="none"><path d="M8 7 L12.5 17 H14.5 L19 7 H17 L13.5 15 L10 7 H8 Z M23 9.5 H25 V17 H23 Z M23 7 H25 V8.5 H23 Z M29 7 L33.5 17 H35.5 L40 7 H38 L34.5 15 L31 7 H29 Z M47 9.5c-2 0-3.5 1.5-3.5 3.5s1.5 3.5 3.5 3.5 3.5-1.5 3.5-3.5-1.5-3.5-3.5-3.5zm0 5.2c-.9 0-1.7-.8-1.7-1.7s.8-1.7 1.7-1.7 1.7.8 1.7 1.7-.8 1.7-1.7 1.7z" fill="#008cd6"/></svg>
+            Vivo
+          </div>
+          <div class="brand-badge brand-realme">
+            <svg viewBox="0 0 24 24" style="width: 22px; height: 22px;"><rect x="2" y="2" width="20" height="20" rx="5" fill="#ffc800"/><path d="M7.5 8.5v8H9.5v-3.5c0-1.5 1-2 2-2h.5V9c-.8 0-1.5.3-2 1V8.5h-2.5z" fill="#000"/></svg>
+            Realme
+          </div>
+          <div class="brand-badge brand-iqoo">
+            <svg viewBox="0 0 80 24" style="width: 44px; height: 18px;" fill="none"><text x="40" y="17" font-family="'Outfit', sans-serif" font-weight="900" font-size="14" fill="#00F2FE" text-anchor="middle" letter-spacing="1">iQOO</text></svg>
+            iQOO
+          </div>
+          <div class="brand-badge brand-tecno">
+            <svg viewBox="0 0 80 24" style="width: 44px; height: 18px;" fill="none"><text x="40" y="17" font-family="'Outfit', sans-serif" font-weight="800" font-size="13" fill="#4FACFE" text-anchor="middle" letter-spacing="0.5">TECNO</text></svg>
+            Tecno
+          </div>
+          <div class="brand-badge brand-infinix">
+            <svg viewBox="0 0 80 24" style="width: 44px; height: 18px;" fill="none"><text x="40" y="17" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" fill="#00FF69" text-anchor="middle" letter-spacing="1.5">Infinix</text></svg>
+            Infinix
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================================================
-       BRANDS SECTION
-       ========================================================================== -->
-  <section class="section brands">
+  <!-- 4. GALLERY SECTION -->
+  <section id="gallery">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="badge">Brands We Cover</span>
-        <h2 class="section-title">Brands We Sell <span>& Repair</span></h2>
-        <p class="section-subtitle">We handle professional screen replacement, parts restoration, and service for all major brands.</p>
+      <div class="section-header">
+        <span class="section-tag">Visuals</span>
+        <h2 class="section-title">Our Work Gallery</h2>
+        <p class="section-desc">Snapshots of our professional repair operations and ready-to-sell second hand mobile stocks.</p>
       </div>
 
-      <div class="brands-container reveal">
-        <div class="brand-pill xiaomi">Xiaomi</div>
-        <div class="brand-pill iphone">iPhone</div>
-        <div class="brand-pill samsung">Samsung</div>
-        <div class="brand-pill tecno">Tecno</div>
-        <div class="brand-pill oppo">OPPO</div>
-        <div class="brand-pill vivo">Vivo</div>
-        <div class="brand-pill infinix">Infinix</div>
-        <div class="brand-pill iqoo">iQOO</div>
-        <div class="brand-pill realme">Realme</div>
+      <div class="gallery-grid">
+        <!-- Item 1 -->
+        <div class="gallery-item" data-src="images/micro_soldering.png">
+          <img class="gallery-img" src="images/micro_soldering.png" alt="Micro soldering on smartphone motherboard" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">🔍</div>
+            <h4>Motherboard Repairing</h4>
+            <p>Chip-level micro soldering logic repairs</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" data-src="images/screen_repair.png">
+          <img class="gallery-img" src="images/screen_repair.png" alt="Display glass change operation" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">🔍</div>
+            <h4>OCA Glass Replacement</h4>
+            <p>High-precision touch screen laminating</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" data-src="images/hero_smartphones.png">
+          <img class="gallery-img" src="images/hero_smartphones.png" alt="Teardown mobile repair process" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">🔍</div>
+            <h4>Internal Hardware Repairs</h4>
+            <p>Battery and speaker quick swap</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item" data-src="images/repair_tools.png">
+          <img class="gallery-img" src="images/repair_tools.png" alt="Clean repair workshop tools" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">🔍</div>
+            <h4>Professional Equipment</h4>
+            <p>Advanced tooling for safe disassembly</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item" data-src="images/refurbished_phones.png">
+          <img class="gallery-img" src="images/refurbished_phones.png" alt="Pre-owned phones array" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">🔍</div>
+            <h4>Second Hand Stocks</h4>
+            <p>Certified pre-owned devices in pristine condition</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item" data-src="images/software_diagnostic.png">
+          <img class="gallery-img" src="images/software_diagnostic.png" alt="Tech accessories and boards" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">🔍</div>
+            <h4>Quality Diagnostics</h4>
+            <p>Software diagnostics and system recovery</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================================================
-       WHY CHOOSE US SECTION
-       ========================================================================== -->
-  <section class="section">
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <button id="lightboxPrev" class="lightbox-nav lightbox-prev" aria-label="Previous Image">&#10094;</button>
+    <button id="lightboxNext" class="lightbox-nav lightbox-next" aria-label="Next Image">&#10095;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" class="lightbox-img" src="" alt="Zoomed view">
+      <div class="lightbox-caption">
+        <h4 id="lightboxTitle"></h4>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. CONTACT US SECTION -->
+  <section id="contact">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="badge">Our Advantages</span>
-        <h2 class="section-title">Why Choose <span>Us?</span></h2>
-        <p class="section-subtitle">Here is why phone owners in Pimpri, Pune rely on Krishna Mobile for all repair needs.</p>
+      <div class="section-header">
+        <span class="section-tag">Reach Us</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-desc">Call us directly, message on WhatsApp, or visit our store in Sai Chowk, Pimpri, Pune.</p>
       </div>
 
-      <div class="why-grid">
-        <!-- Why Card 1 -->
-        <div class="why-card glass-panel reveal">
-          <div class="why-icon">🗣️</div>
-          <h3 class="why-title">Simple Language</h3>
-          <p class="why-text">No technical jargon. We explain the exact issue clearly so you understand exactly what we are fixing.</p>
-        </div>
+      <div class="contact-grid">
+        <!-- Left: Contact Details and Map -->
+        <div class="contact-info-cards">
+          <!-- Two Contact Cards Row -->
+          <div class="contact-card-row">
+            <div class="contact-card">
+              <span class="contact-role">Proprietor</span>
+              <h4>Krishna</h4>
+              <a href="tel:9527226918" class="contact-phone">9527226918</a>
+              <div class="contact-actions">
+                <a href="tel:9527226918" class="btn btn-primary btn-sm">
+                  📞 Call Now
+                </a>
+                <a href="https://wa.me/919527226918?text=Hello%20Krishna%20Mobile,%20I%20have%20a%20repair/deal%20query" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+                  💬 WhatsApp
+                </a>
+              </div>
+            </div>
 
-        <!-- Why Card 2 -->
-        <div class="why-card glass-panel reveal">
-          <div class="why-icon">💰</div>
-          <h3 class="why-title">Best Prices</h3>
-          <p class="why-text">Repairs ranging from ₹500 to ₹30,000. Honest quotes with zero hidden service fees.</p>
-        </div>
-
-        <!-- Why Card 3 -->
-        <div class="why-card glass-panel reveal">
-          <div class="why-icon">⚡</div>
-          <h3 class="why-title">Same-Day Repair</h3>
-          <p class="why-text">Most tasks like display glass replacements are done in just 30–60 minutes.</p>
-        </div>
-
-        <!-- Why Card 4 -->
-        <div class="why-card glass-panel reveal">
-          <div class="why-icon">📍</div>
-          <h3 class="why-title">Sai Chowk, Pimpri</h3>
-          <p class="why-text">Find us easily at Shop 5, Jay Plaza, Sai Chowk. Convenient parking and location.</p>
-        </div>
-      </div>
-
-      <div class="why-cta reveal">
-        <a href="about.html" class="btn btn-secondary">
-          Learn More 
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       CTA BANNER
-       ========================================================================== -->
-  <section class="section" style="padding-top: 0;">
-    <div class="container reveal">
-      <div class="cta-banner">
-        <div class="cta-banner-content">
-          <h2 class="cta-title">Need Help? Just Call or WhatsApp — We'll Guide You For Free!</h2>
-          <div class="cta-buttons">
-            <a href="tel:9527226918" class="btn btn-primary">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              Call Now
-            </a>
-            <a href="https://wa.me/919527226918" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-              <!-- WhatsApp SVG -->
-              <svg width="20" height="20" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L3 480l117.7-30.9c32.4 17.7 68.9 27 106.3 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-              WhatsApp Us
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       FOOTER
-       ========================================================================== -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <!-- Col 1: About & Info -->
-      <div class="footer-col">
-        <div class="logo">
-          <div class="logo-circle">KM</div>
-          <div class="logo-text">
-            <span>Krishna Mobile</span>
-            <span>& Repair</span>
-          </div>
-        </div>
-        <p class="footer-desc">
-          Pimpri's Most Trusted Mobile Repair Shop. Providing display replacement, water damage repair, second-hand phone sales, and premium mobile accessories.
-        </p>
-      </div>
-
-      <!-- Col 2: Quick Links -->
-      <div class="footer-col">
-        <h4 class="footer-col-title">Quick Links</h4>
-        <ul class="footer-links-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 3: Services -->
-      <div class="footer-col">
-        <h4 class="footer-col-title">Our Services</h4>
-        <ul class="footer-links-list">
-          <li><a href="services.html">Display Replacement</a></li>
-          <li><a href="services.html">Second-Hand Mobiles</a></li>
-          <li><a href="services.html">Hardware Repair</a></li>
-          <li><a href="services.html">Software Flashing</a></li>
-          <li><a href="services.html">Accessories</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 4: Contact Details -->
-      <div class="footer-col">
-        <h4 class="footer-col-title">Contact Info</h4>
-        <div class="footer-contact-info">
-          <div class="footer-contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            <span>Shop No. 5, Jay Plaza, Sai Chowk, Pimpri, Pune - 17</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            <div>
-              <a href="tel:9527226918" class="phone-link">9527226918</a> (Krishna)<br>
-              <a href="tel:7773977774" class="phone-link">7773977774</a> (Pruthwiraj)
+            <div class="contact-card">
+              <span class="contact-role">Store Manager</span>
+              <h4>Pruthwi Singh</h4>
+              <a href="tel:7773977774" class="contact-phone">7773977774</a>
+              <div class="contact-actions">
+                <a href="tel:7773977774" class="btn btn-primary btn-sm">
+                  📞 Call Now
+                </a>
+                <a href="https://wa.me/917773977774?text=Hello%20Krishna%20Mobile,%20I%20have%20a%20repair/deal%20query" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+                  💬 WhatsApp
+                </a>
+              </div>
             </div>
           </div>
-          <div class="footer-contact-item">
-            <!-- WhatsApp mini icon -->
-            <svg width="18" height="18" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L3 480l117.7-30.9c32.4 17.7 68.9 27 106.3 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-            <a href="https://wa.me/919527226918" target="_blank" rel="noopener noreferrer" style="color: var(--success-green); font-weight: 700;">Chat on WhatsApp</a>
+
+          <!-- Address and Embedded Map Card -->
+          <div class="contact-address-card">
+            <div class="address-icon">📍</div>
+            <div class="address-details" style="width: 100%;">
+              <h4>Store Location</h4>
+              <p>Shop No 5, Jay Plaza, Sai Chowk, Pimpri, Pune - 17</p>
+              
+              <!-- Embedded Google Map -->
+              <div class="map-container">
+                <iframe 
+                  title="Krishna Mobile Repair Shop Location Map"
+                  src="https://maps.google.com/maps?q=18.6204266,73.8041847&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+              <div style="margin-top: 16px;">
+                <a href="https://www.google.com/maps?q=18.6204266,73.8041847&z=17&hl=en" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%;">
+                  🗺️ Open in Google Maps (Get Directions)
+                </a>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <!-- Right: Message Form -->
+        <div class="contact-form-box">
+          <h3>Send a Message</h3>
+          <p>Have questions about a second-hand phone price or repair cost? Leave us a message and we'll get back to you shortly.</p>
+          
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+              <label for="name" class="form-label">Your Name</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" id="phone" class="form-input" placeholder="Phone Number" required>
+              <label for="phone" class="form-label">Phone Number</label>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" class="form-input" placeholder="Your Message" required></textarea>
+              <label for="message" class="form-label">Your Message</label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              ⚡ Submit Query
+            </button>
+          </form>
         </div>
       </div>
     </div>
-    
-    <div class="container footer-bottom">
-      <p class="footer-copyright">&copy; 2026 Krishna Mobile & Repair. All rights reserved. Developed with absolute care.</p>
+  </section>
+
+  <!-- SUCCESS TOAST POPUP -->
+  <div id="successToast" class="success-toast" role="alert">
+    <div class="toast-icon">✓</div>
+    <div class="toast-content">
+      <h4>Message Sent Successfully!</h4>
+      <p>Krishna Mobile team will contact you shortly.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <a href="#home" class="logo-container footer-logo">
+            <img src="images/logo%20website.png" alt="Krishna Mobile Logo" class="logo-img">
+            <div class="logo-text">Krishna <span>Mobile</span></div>
+          </a>
+          <p class="footer-desc">Pimpri's trusted store for second-hand premium smartphones and motherboard glass repair services.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li><a href="#home">🏠 Home</a></li>
+            <li><a href="#about">👋 About Us</a></li>
+            <li><a href="#services">🔧 Services</a></li>
+            <li><a href="#gallery">📸 Gallery</a></li>
+            <li><a href="#contact">📞 Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-hours">
+          <h4>Working Hours</h4>
+          <p>Monday - Saturday: <span>10:00 AM - 09:00 PM</span></p>
+          <p>Sunday: <span>11:00 AM - 07:00 PM</span></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Krishna Mobile Repair. All Rights Reserved.</p>
+        <p>Developed by <a href="https://techmall.co" target="_blank" rel="noopener">Tech Mall Consultancy</a></p>
+        <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">&#10095;</button>
+      </div>
     </div>
   </footer>
 
-  <!-- ==========================================================================
-       FLOATING WHATSAPP BUTTON (ALL PAGES)
-       ========================================================================== -->
-  <a href="https://wa.me/919527226918" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L3 480l117.7-30.9c32.4 17.7 68.9 27 106.3 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-  </a>
-
-  <!-- Script Import -->
+  <!-- Site Script -->
   <script src="script.js"></script>
 </body>
 </html>
